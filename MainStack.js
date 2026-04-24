@@ -1,3 +1,4 @@
+import ProfilEkrani from './ProfilEkrani';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
@@ -10,7 +11,7 @@ const MainStack = () => {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Login">
                 {/* Buraya ilerde sayfalarımızı ekleyeceğiz */}
-            </Stack.Navigator>
+            </<Stack.Screen name="Profil" component={ProfilEkrani} />>
         </NavigationContainer>
     );
 };
